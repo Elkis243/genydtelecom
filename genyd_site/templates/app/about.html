@@ -1,0 +1,128 @@
+{% extends "base.html" %} {% load static %} {% block base %}
+{% include 'components/navbar.html' %}
+
+<header class="text-white p-5 mt-5 header-about d-flex justify-content-center align-items-center">
+      <div class="container-fluid">
+            <div class="row">
+                  <div class="col">
+                        <h1 class="text-center">#Qui sommes-nous ?</h1>
+                  </div>
+            </div>
+      </div>
+</header>
+<main>
+      <div class="container-fluid p-5">
+            <div class="row">
+                  <div class="col-md-5">
+                        <div class="alert alert-secondary border-0 p-4">
+                              <h4 class="mb-4">
+                                    <i class="bi bi-clock-history fs-3"></i> Historique
+                              </h4>
+                              <p>
+                                    Fondée en 2020, la Genyd-Télécom est une Entreprise à Responsabilité
+                                    Limitée (SARL) aux capitaux 100% congolais, œuvrant dans le domaine
+                                    de la Télécommunications et la technologie dont l’activité
+                                    principale est la fourniture d’accès internet à haut débit.
+                              </p>
+                        </div>
+                        <div class="alert alert-primary border-0 p-4">
+                              <h4 class="mb-4">
+                                    <i class="bi bi-journal-text fs-3"></i> Statut juridique
+                              </h4>
+                              <p>
+                                    Conformément à l’ordonnance loi n°008 / 009 du 7 Juillet, GENYD
+                                    Telecom SARL est une entreprise privée, assurant la fourniture
+                                    d’accès internet et le développement de solutions informatiques.
+                              </p>
+                        </div>
+                  </div>
+                  <div class="col-md-7">
+                        <div class="alert alert-success border-0 p-4">
+                              <h4 class="mb-4">
+                                    <i class="bi bi-bullseye fs-3"></i> Missions de GENYD Telecom
+                              </h4>
+                              <p class="mb-4">
+                                    La GENYD Telecom SARL s’assigne les missions suivantes :
+                              </p>
+                              <ul>
+                                    <li>
+                                          Assurer le perfectionnement et l’employabilité des demandeurs
+                                          d’emplois dans le secteur des télécommunications et du numérique.
+                                    </li>
+                                    <li>
+                                          Fournir une meilleure connexion internet à travers la RDC et
+                                          particulièrement aux sociétés privées et publiques.
+                                    </li>
+                                    <li>
+                                          Faciliter l’accès à la connexion internet dans tous les coins de
+                                          la RDC.
+                                    </li>
+                                    <li>Renforcer les capacités professionnelles.</li>
+                                    <li>
+                                          Faciliter la conversion de la qualification professionnelle.
+                                    </li>
+                                    <li>
+                                          Assurer la transformation digitale des entreprises et des
+                                          particuliers.
+                                    </li>
+                                    <li>
+                                          Organiser des conférences et ateliers pour vulgariser les
+                                          connaissances sur les technologies et les réseaux informatiques.
+                                    </li>
+                              </ul>
+                              <p>
+                                    Son action s’adapte à toutes les couches sociales en fonction des
+                                    besoins spécifiques de chaque groupe.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <section class="p-5 text-center">
+            <div class="container">
+                  <h3 class="mb-4 text-primary"><i class="bi bi-journal fs-2"></i> Valeurs</h3>
+                  <div class="row d-flex justify-content-center">
+                        <div class="col-md-4 mb-4">
+                              <div class="card border-0 d-flex flex-column h-100">
+                                    <div class="card-body text-center">
+                                          <i class="bi bi-emoji-smile-fill fs-2 mb-3"></i>
+                                          <h5 class="card-title">Accessibilité</h5>
+                                          <p class="card-text text-muted">
+                                                Rendre l'internet et les services numériques accessibles à tous
+                                                les Congolais, peu importe leur emplacement géographique.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                              <div class="card border-0 d-flex flex-column h-100">
+                                    <div class="card-body text-center">
+                                          <i class="bi bi-shield-lock-fill fs-2 mb-3"></i>
+                                          <h5 class="card-title">Fiabilité</h5>
+                                          <p class="card-text text-muted">
+                                                Offrir un service stable et de haute qualité, en assurant la
+                                                disponibilité et la sécurité des connexions.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                              <div class="card border-0 d-flex flex-column h-100">
+                                    <div class="card-body text-center">
+                                          <i class="bi bi-speedometer2 fs-2 mb-3"></i>
+                                          <h5 class="card-title">Rapidité</h5>
+                                          <p class="card-text text-muted">
+                                                Fournir des solutions rapides et efficaces pour répondre aux
+                                                besoins de nos clients, avec des installations et un support
+                                                sans délais.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+</main>
+
+{% include 'components/footer.html' %} {% endblock base %}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description"
+            content="Genyd Télécom, votre partenaire en télécommunications. Découvrez nos solutions sur mesure, forfaits adaptés et services de qualité. Contactez-nous pour plus d'informations.">
+      <meta name="keywords"
+            content="Genyd Télécom, télécommunications, forfaits, solutions professionnelles, internet, téléphonie">
+      <meta name="author" content="Genyd Télécom">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <link rel="stylesheet" href="{% static 'style/bootstrap-min.css' %}">
+      <link rel="stylesheet" href="{% static 'style/bootstrap-icons.min.css' %}">
+      <link rel="stylesheet" href="{% static 'style/base.css' %}">
+      {% if current_link_name == 'contact' %}
+      <script src="{% static 'script/contact.js' %}"></script>
+      {% endif %}
+      <script src="{% static 'script/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'script/loading.js' %}"></script>
+      <title>Genyd Télecom</title>
+</head>
+
+<body class="overflow-x-hidden">
+      <div id="loading" class="loading-overlay">
+            <img src="{% static 'image/loader.svg' %}" alt="Chargement..." class="loading-image">
+      </div>
+
+      {% block base %}{% endblock base %}
+      <script>
+            AOS.init();
+      </script>
+</body>
+
+</html>
