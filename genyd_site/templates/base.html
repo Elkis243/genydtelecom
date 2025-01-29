@@ -10,7 +10,7 @@
       <meta name="keywords"
             content="Genyd Télécom, télécommunications, forfaits, solutions professionnelles, internet, téléphonie">
       <meta name="author" content="Genyd Télécom">
-      <link rel="shortcut icon" href="{% static 'image/favicon.png' %}" type="image/x-icon">
+      <link rel="shortcut icon" href="{% static 'image/favicon.webp' %}" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
@@ -19,11 +19,6 @@
       <link rel="stylesheet" href="{% static 'style/bootstrap-min.css' %}">
       <link rel="stylesheet" href="{% static 'style/bootstrap-icons.min.css' %}">
       <link rel="stylesheet" href="{% static 'style/base.css' %}">
-      {% if current_link_name == 'contact' %}
-      <script src="{% static 'script/contact.js' %}"></script>
-      {% endif %}
-      <script src="{% static 'script/bootstrap.bundle.min.js' %}"></script>
-      <script src="{% static 'script/loading.js' %}"></script>
       <title>Genyd Télecom</title>
 </head>
 
@@ -36,6 +31,11 @@
       <script>
             AOS.init();
       </script>
+      <script src="{% static 'script/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'script/loading.js' %}"></script>
+      {% if current_link_name == 'contact' %}
+      <script src="{% static 'script/contact.js' %}"></script>
+      {% endif %}
 </body>
 
 </html>
